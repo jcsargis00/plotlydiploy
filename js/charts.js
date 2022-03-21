@@ -69,9 +69,9 @@ function buildCharts(sample) {
     var otu_ids = result.otu_ids;
     var otu_labels = result.otu_labels;
     var sample_values = result.sample_values;
-    console.log(otu_ids)
-    console.log(otu_labels)
-    console.log(sample_values)
+    //console.log(otu_ids)
+    //console.log(otu_labels)
+    //console.log(sample_values)
 
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
@@ -108,8 +108,8 @@ function buildCharts(sample) {
       text: otu_labels.reverse(),
       mode: 'markers',
       marker: {
-        size: sample_values.reverse(),
-        color: otu_ids.reverse(),
+        size: sample_values,
+        color: otu_ids,
         colorscale: 'Earth'
       }
       
@@ -121,7 +121,6 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample",
       xaxis: {title: "OTU ID"},
-      yaxis: {title: ""},
       automargin: true,
       hovermode: "closest"
       
@@ -154,8 +153,10 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     var gaugeData = [{ 
       value: wfreqs,
-        title: { text: "<b>Belly Button Washing Frequency</b><br> Scrubs Per Week" },
+        title: { text: "<b color: 'blue'> Belly Button Washing Frequency</b><br> Scrubs Per Week" },
         type: "indicator",
+        FontFace: 'Tahoma',
+        color: 'blue',
         mode: "gauge+number" ,
         gauge: {
           axis: {range : [null,10],dtick:"2"},

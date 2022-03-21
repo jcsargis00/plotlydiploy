@@ -32,3 +32,5 @@
 * changed font on Jumbotron to Trebuchet, and changed color to white
 #
 ![whole page](https://github.com/jcsargis00/plotlydiploy/blob/main/images/page.PNG)
+#
+Created interactive web site to display data on github.io, URL is https://jcsargis00.github.io/

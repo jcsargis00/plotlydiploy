@@ -1,23 +1,11 @@
-.masthead {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('header_img.png');
-    background-size: cover;
-    background-position: center;
+.jumbotron-image {
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
-
-#vpadding {
-  padding: 25% 0;
+  body {
+    font: normal 10px Trebuchet;
 }
-
-#scale_id {
-  width: 500px;
-  height: 500px;
-  object-fit: fill;
+h2, h3 {
+    font-size: 14px Tahoma;
 }
-
-.jumbotron mt-3 {
-    background-image: url('./images/bacteria.jpg');
-    background-size: cover;
-    height: 100%;}
